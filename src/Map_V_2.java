@@ -1,12 +1,15 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
 import java.io.*;
 
 public class Map_V_2 extends JPanel implements ActionListener, KeyListener
@@ -490,6 +493,10 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
                     Logic for ensuring that Pacman  as he moves out of bounds when drawing, to reduce the chance of an error
                     or an out-of-bounds error within the map
                     we can set his position to the other side where he will exit the teleport.
+
+                    TODO While teleporting player cannot change direction for .5 of a second or so to ensure they
+                        don't try to re-teleport back and get stuck
+                        which would lead to an out of bounds error or paint error where they are off screen.
                  */
                 if (myPacman.getXpos() == 0)
                 {

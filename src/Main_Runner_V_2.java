@@ -17,7 +17,7 @@ public class Main_Runner_V_2 {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setContentPane(loading_screen);
-        window.setSize(500,610);
+        window.setSize(495,610);
         window.setVisible(true);
 
     }
