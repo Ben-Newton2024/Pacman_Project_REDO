@@ -16,7 +16,7 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
     // Create instances of pacman and other characters,
     // that will be drawn on the map, which extend the characteristics of actor
     private final Pacman_V_2 myPacman = new Pacman_V_2();
-    private final Ghosts_V_2 Blinky 	= new Ghosts_V_2(Color.RED);
+    private final Ghosts_V_2 Blinky = new Ghosts_V_2(Color.RED);
     private final Ghosts_V_2 Clyde 	= new Ghosts_V_2(Color.ORANGE);
     private final Ghosts_V_2 Pinky 	= new Ghosts_V_2(Color.PINK);
     private final Ghosts_V_2 Inky 	= new Ghosts_V_2(Color.CYAN);
@@ -99,6 +99,7 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
         {
             // If an IOException is thrown while closing the BufferedReader, print an error message
             System.err.format("IOException: %s%n", ioe);
+            System.exit(0);
         }
     }
 
@@ -166,10 +167,12 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
         {
             // If an IOException is thrown while closing the BufferedReader, print an error message
             System.err.format("IOException: %s%n", ioe);
+            System.exit(0);
         }
         // File is read, all loops end,
         // start the timer, to get the gaming ticking,
-        // TODO, MAKE HOME SCREEN SO ANIMATION TIMER DOESNT NEED TO START TILL IN MAP LEVELS.
+        // TODO, MAKE HOME SCREEN SO ANIMATION TIMER DOESNT NEED TO START TILL IN MAP LEVELS
+        //  aka not in the home screen, unless there is some animation in there.
         myAnimationTimer.start();
     }
 
