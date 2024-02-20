@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import Old_Code.Actor;
 import Old_Code.Ghosts;
 
@@ -13,6 +13,8 @@ import java.awt.event.KeyListener;
 import java.util.Arrays;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
+ */
 /*
 public class Map extends JPanel implements ActionListener, KeyListener
 {
