@@ -14,7 +14,7 @@ public abstract class Actor_V_2
     private double myXpos;
     private int myFace = RIGHT;
     private int myNextFace = RIGHT;
-    private double mySpeed = 0.1;
+    private final double mySpeed = 0.1;
 
     public abstract void draw(Graphics2D g, int x, int y, int width, int height);
 
@@ -55,10 +55,6 @@ public abstract class Actor_V_2
     public int getnextFace()
     {
         return myNextFace;
-    }
-    public void stop()
-    {
-        myFace = -myFace;
     }
     public int getFace()
     {

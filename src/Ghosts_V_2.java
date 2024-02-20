@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 public class Ghosts_V_2 extends Actor_V_2
 {
 
-    private Color myColor;
+    private final Color myColor;
     private int myAnimationPhase = 0;
 
     public Ghosts_V_2(Color c)
