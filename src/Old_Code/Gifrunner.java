@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import java.io.File;
 
 import javax.sound.sampled.AudioSystem;
@@ -48,3 +48,5 @@ public class Gifrunner extends JPanel {
 		audio(Filewav);
 	}
 }
+
+ */

@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import Old_Code.Actor;
 
 import java.awt.Color;
@@ -339,3 +339,6 @@ public class Ghosts extends Actor
 	//move
 	//chases or flees from pacman
 }
+
+
+ */

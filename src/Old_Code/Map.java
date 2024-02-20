@@ -13,7 +13,7 @@ import java.awt.event.KeyListener;
 import java.util.Arrays;
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
+/*
 public class Map extends JPanel implements ActionListener, KeyListener
 {
 	private int[][] myMap;
@@ -614,3 +614,5 @@ public class Map extends JPanel implements ActionListener, KeyListener
 		
 	}
 }
+
+ */

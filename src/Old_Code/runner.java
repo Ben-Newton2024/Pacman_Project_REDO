@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import Old_Code.Map;
 
 import javax.swing.JFrame;
@@ -20,3 +20,5 @@ public class runner {
 		
 	}
 }
+
+ */

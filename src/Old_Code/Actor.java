@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import java.awt.Graphics2D;
 
 public abstract class Actor 
@@ -59,7 +59,7 @@ public abstract class Actor
 	}
 	public void BoostSpeed()
 	{
-		mySpeed = 0.2;
+		mySpeed = 0.15;
 		boost = true;
 	}
 	public void normSpeed()
@@ -97,3 +97,5 @@ public abstract class Actor
 		
 	}
 }
+
+ */

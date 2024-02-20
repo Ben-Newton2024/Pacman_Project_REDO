@@ -1,5 +1,5 @@
 package Old_Code;
-
+/*
 import Old_Code.Actor;
 
 import java.awt.Color;
@@ -230,3 +230,5 @@ public class Pacman extends Actor
 
 
 }
+
+ */
