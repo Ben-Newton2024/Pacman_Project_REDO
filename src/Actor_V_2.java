@@ -26,8 +26,8 @@ public abstract class Actor_V_2
                                     in the game
 
 
-                    Also includes changing the direction the Actor will be facing
-                                setting the speed if there is a boost
+                Also includes changing the direction the Actor will be facing
+                            setting the speed if there is a boost
 
      */
     public void setPos (double x, double y)

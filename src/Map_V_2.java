@@ -234,7 +234,7 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
             // Used to check if a character is about to move off-screen, to be able to teleport them to the other side,
             // as well as using this to reduce the chances of there being an out-of-bounds error, when trying to extend
             // beyond the limits the 2D array.
-            boolean isteleportValid = true;
+            boolean is_teleport_valid = true;
             for(int x=0; x<myMap[y].length; x++)
             {
                 /*
@@ -486,8 +486,6 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
                     g2.fillOval(x*blockWidth, y*blockHeight, blockWidth, blockHeight);
                 }
 
-
-
                 /*
                     Logic for ensuring that Pacman  as he moves out of bounds when drawing, to reduce the chance of an error
                     or an out-of-bounds error within the map
@@ -495,20 +493,20 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
                  */
                 if (myPacman.getXpos() == 0)
                 {
-                    if (isteleportValid)
+                    if (is_teleport_valid)
                     {
                         myPacman.setPos(myMap[x].length-1, myPacman.getYpos());
-                        isteleportValid = false;
+                        is_teleport_valid = false;
                     }
 
                 }
 
                 if (myPacman.getXpos() == myMap[y].length-1)
                 {
-                    if(isteleportValid)
+                    if(is_teleport_valid)
                     {
                         myPacman.setPos(0, myPacman.getYpos());
-                        isteleportValid = false;
+                        is_teleport_valid = false;
                     }
                 }
             }
