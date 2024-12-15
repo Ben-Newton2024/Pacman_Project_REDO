@@ -114,7 +114,7 @@ public class Map_V_2 extends JPanel implements ActionListener, KeyListener
             allowing for the walls of the map, the playable space for pacman and the ghosts to be added.
             once they are added they can later be drawn.
      */
-    public void setupMap(int rows, int column, String filename){
+    private void setupMap(int rows, int column, String filename){
         try{
             // Make a new map the 'size' of the text file
             // 2D array is made for game
